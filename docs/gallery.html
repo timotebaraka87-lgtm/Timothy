@@ -1,66 +1,63 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-    <!-- Try opening this file on your local computer in a web browser (Firefox, Chrome, etc). 
-     * On Windows, go to the browser and type control + o and browse to find this file to open it.
-     * On Mac, go to the browser and type command + o and browse to find this file to open it. 
-     Look for the text in the <title> element in the tab above the browser search bar. Do you see it? 
-    -->
-    <head>
-        <!-- What's in the <head> element is a "meta" area not for display. 
-            It holds important information about the website's contents.
-            The text inside the <title> element does show in the top tab of a web browser. 
-             The <head> is where we will include info about styling the site, too. -->
-        <title>Galler Timothy</title>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- Here is a place where we can add a little styling code called CSS to this page. 
-            I used it to apply a background color to the body element.
-        -->
-        <link rel="stylesheet" type="text/css" href="style.css" />
-    </head>
-    <body>
-        <!-- CONTENT FOR DISPLAY. The <body> element holds the content we see in the display window on the web browser.-->
-        <h1>Gallery</h1>
+    <html xmlns="http://www.w3.org/1999/xhtml">
         
+        <head>
+            <title>Gallery - Timothy Baraka</title>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link rel="stylesheet" type="text/css" href="style.css" />
+        </head>
+        
+        <body>
+            
+            <h1>Gallery</h1>
+            
             <nav>
-                <a href="index.html">Home</a><a href="about.html">About</a><a href="gallery.html">Gallery</a><a href="resume.html">Resume</a>
+                <a href="index.html">Home</a> |
+                <a href="about.html">About</a> |
+                <a href="gallery.html">Gallery</a> |
+                <a href="resume.html">Resume</a>
             </nav>
-        <p>Welcome to my gallery. Here are some photos and projects that represent my interests, education, and experiences.</p>
+            
+            <p>Welcome to my gallery. Here are some photos and projects that represent my interests, education, and experiences.</p>
+            
+            <div class="side-by-side">
+                
+                <figure>
+                    <img src="images/drc-congo.jpg.webp" alt="Democratic Republic of the Congo" />
+                    <figcaption>
+                        The Democratic Republic of the Congo is my home country.
+                    </figcaption>
+                </figure>
+                
+                <figure>
+                    <img src="images/penn-state.jpg.jpg" alt="Penn State Behrend" />
+                    <figcaption>
+                        Penn State Behrend is where I am studying Political Science.
+                    </figcaption>
+                </figure>
+                
+                <figure>
+                    <img src="images/Congo-history.jpg.jpg" alt="History of the Democratic Republic of the Congo" />
+                    <figcaption>
+                        Learning about the history of the Democratic Republic of the Congo has strengthened my appreciation for my country's culture and heritage.
+                    </figcaption>
+                </figure>
+                
+                <figure>
+                    <img src="images/Drc Congo flag.jpg" alt="Flag of the Democratic Republic of the Congo" />
+                    <figcaption>
+                        The flag of the Democratic Republic of the Congo represents my heritage and pride in my home country.
+                    </figcaption>
+                </figure>
+                
+            </div>
+            
+            <footer class="featureBlock">
+                <p>Shout out to the W3C community and the developers of markup languages and the oXygen XML editor!</p>
+                <p>We are... Digit at Penn State Behrend!</p>
+            </footer>
+            
+        </body>
         
-        <div class="side-by-side">
-            
-            <figure>
-                <img src="images/drc-congo.jpg" alt="Democratic Republic of the Congo" />
-                <figcaption>
-                    The Democratic Republic of the Congo is my home country.
-                </figcaption>
-            </figure>
-            
-            <figure>
-                <img src="images/penn-state.jpg" alt="Penn State Behrend" />
-                <figcaption>
-                    Penn State Behrend is where I am studying Political Science.
-                </figcaption>
-            </figure>
-            
-            <figure>
-                <img src="images/Congo-history.jpg" alt="History of the Democratic Republic of the Congo" />
-                <figcaption>
-                    Learning about the history of the Democratic Republic of the Congo has strengthened my appreciation for my country's culture and heritage.
-                </figcaption>
-            </figure>
-            
-            <figure>
-                <img src="images/drc-congo-flag.jpg" alt="Flag of the Democratic Republic of the Congo" />
-                <figcaption>
-                    The flag of the Democratic Republic of the Congo represents my heritage and pride in my home country.
-                </figcaption>
-            </figure>
-            
-        </div>
-        <footer class="featureBlock">
-            <p>Shout out to the w3c community, and the developers of markup languages, and the oXygen XML editor!</p>
-            <p>We are . . . Digit at Penn State Behrend!</p>
-        </footer>
-    </body>
-</html>
+    </html>
