@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Development Reflection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Website Development Reflection</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="resume.html">Resume</a>
+            <a href="reflection.html">Reflection</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Comparing GitHub Pages and WordPress</h2>
+
+        <p>I developed two websites using two different methods: GitHub Pages using HTML and CSS, and Penn State Sites using WordPress. Creating both websites helped me understand the differences between developing a website through coding and developing one through a content management system. Both methods have advantages and challenges, but the biggest difference I noticed was the level of control and the amount of technical knowledge required.</p>
+
+        <p>When I first started using GitHub Pages, one of the biggest challenges was learning the basic skills needed to create a website from scratch. Learning HTML, CSS, file paths, and Git commands was difficult because I was new to web development. I had to understand how different files connected together and how changes in the code affected the appearance of the website. However, one major advantage of GitHub Pages was having full control over my website design and code. I was able to customize the layout, colors, and organization of my website by directly editing the code.</p>
+
+        <p>One challenge with GitHub Pages is that changing the layout requires editing the code manually. This means that developers need to understand HTML, CSS, and debugging. These skills are important because mistakes in the code can affect how the website works. Even though it was challenging, learning these skills gave me a better understanding of how websites are created and how developers control different parts of a webpage.</p>
+
+        <p>Compared to GitHub Pages, creating a website with Penn State Sites and WordPress was easier for organizing content. WordPress provides tools that allow users to create pages, add images, and change layouts without writing as much code. This makes it more beginner-friendly and faster when creating a website. However, one disadvantage is that WordPress has more limitations when it comes to customization because users have to work within available themes and tools.</p>
+
+        <p>Another challenge with WordPress was learning how to use the different features, including menus, pages, themes, and blocks. Even though WordPress requires less coding, users still need skills in organization, design, and understanding how websites are structured. Both methods require creativity, patience, and the ability to learn new technology.</p>
+
+        <p>After completing both websites, I think GitHub Pages is better for people who want complete control over their website and want to develop coding skills. WordPress is better for people who want to create a website quickly and focus more on sharing information and content. Both experiences helped me improve my digital skills and understand different approaches to website development.</p>
+
+        <p>I would like to learn more advanced CSS, JavaScript, and other tools that can help me create more interactive and professional websites. I also want to improve my ability to organize information and design websites that are easier for users to navigate.</p>
+
+        <h2>My Websites</h2>
+        <p>My GitHub Pages website can be found here:
+            <a href="https://timotebaraka87-lgtm.github.io/Timothy/">Visit my GitHub Pages website</a>
+        </p>
+        <p>My Penn State Sites website can be found here:
+            <a href="https://sites.psu.edu/baraka/">Visit my Penn State Sites website</a>
+        </p>
+    </main>
+
+    <footer>
+        <p>Website Development Reflection</p>
+    </footer>
+</body>
+</html>
