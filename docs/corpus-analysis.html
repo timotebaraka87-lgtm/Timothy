@@ -2,66 +2,297 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Corpus Analysis - Timothy Baraka</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+    
+    <title>Corpus Analysis - Timothy Baraka</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        .corpus-container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 2rem auto;
+            line-height: 1.6;
+        }
 
-<h1>Corpus Analysis Project</h1>
-<h2>Timothy Baraka</h2>
+        .corpus-section {
+            margin: 2rem 0;
+            padding: 1.5rem;
+            border: 1px solid #ddd;
+            border-radius: 12px;
+        }
 
-<h2>My Research Question</h2>
-<p>How did Patrice Lumumba and Thomas Sankara use political language to promote African independence, unity, and resistance to foreign influence?</p>
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            justify-content: center;
+            margin: 1.5rem 0;
+        }
 
-<h2>About My Project</h2>
-<p>For my corpus analysis, I compared two political speeches by Patrice Lumumba and Thomas Sankara. I chose these leaders because both challenged foreign influence and supported African independence. I used Voyant Tools and AntConc to explore their political language.</p>
+        .image-gallery figure {
+            flex: 1 1 20rem;
+            max-width: 100%;
+            margin: 0;
+        }
 
-<h2>Texts and Sources</h2>
+        .image-gallery img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
 
-<h3>Patrice Lumumba (1960)</h3>
-<p>Lumumba delivered his speech on June 30, 1960, during Congo's independence from Belgium. He focused on freedom, national unity, and the future of Congo.</p>
-<p>Source: <a href="https://lumumbacenter.org/listen">Patrice Lumumba Center</a></p>
+        .image-gallery img:hover {
+            transform: scale(1.03);
+        }
 
-<h3>Thomas Sankara (1984)</h3>
-<p>Sankara delivered his speech at the United Nations on October 4, 1984. He discussed imperialism, economic inequality, and African independence.</p>
-<p>Source: <a href="https://www.marxists.org/archive/sankara/1984/october/04.htm">Thomas Sankara's UN Speech</a></p>
+        .image-gallery figcaption {
+            text-align: center;
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+        }
 
-<h2>My Text Files</h2>
-<p>I saved both speeches as text files in my GitHub repository so others can access and analyze them.</p>
-<p><a href="https://github.com/timotebaraka87-lgtm/Timothy/tree/main/politicalSpeeches">View My Political Speech Text Files</a></p>
+        @media (max-width: 600px) {
+            .corpus-container {
+                width: 95%;
+            }
 
-<h2>Voyant Tools Analysis</h2>
-<p>I used Voyant Tools to identify frequently used words and themes in both speeches.</p>
-
-<h3>Patrice Lumumba</h3>
-<img src="images/lumumba-voyant.png" alt="Lumumba Voyant analysis" width="700">
-<p>Words such as "independence," "Congo," and "struggle" show Lumumba's focus on freedom and building a united nation.</p>
-
-<h3>Thomas Sankara</h3>
-<img src="images/sankara-voyant.png" alt="Sankara Voyant analysis" width="700">
-<p>Sankara focused on imperialism, inequality, and the challenges African countries faced after independence.</p>
-
-<h2>AntConc Analysis</h2>
-<p>I used AntConc to find repeated phrases in both speeches.</p>
-
-<h3>Patrice Lumumba</h3>
-<img src="images/lumumba-antconc-2gram.png" alt="Lumumba AntConc 2-gram results" width="700">
-<img src="images/lumumba-antconc-3gram.png" alt="Lumumba AntConc 3-gram results" width="700">
-<p>I noticed that Lumumba repeated phrases like "we shall" and "of the Congo." This shows how he focused on Congo's independence and future.</p>
-
-<h3>Thomas Sankara</h3>
-<img src="images/sankara-antconc-2gram.png" alt="Sankara AntConc 2-gram results" width="700">
-<img src="images/sankara-antconc-3gram.png" alt="Sankara AntConc 3-gram results" width="700">
-<p>Using AntConc, I noticed that Sankara repeated phrases like "on behalf of" and "the Third World." This shows how he spoke about the struggles of African countries and other nations facing foreign influence.</p>
-
-<h2>Comparison</h2>
-<p>After comparing both speeches, I noticed that Lumumba focused more on Congo's independence, while Sankara focused on problems African countries still faced after independence. Both leaders wanted freedom, unity, and less foreign influence.</p>
-
-<h2>Conclusion</h2>
-<p>Through this project, I learned how political leaders use language to express their beliefs and encourage change. Although Lumumba and Sankara spoke in different years, both addressed challenges connected to African independence and foreign influence.</p>
-
-</body>
+            .corpus-section {
+                padding: 1rem;
+            }
+        }
+    </style>
+  </head>
+  
+  <body>
+    
+    <main class="corpus-container">
+      
+      <h1>Corpus Analysis Project</h1>
+      <p>By Timothy Baraka</p>
+      
+      <section class="corpus-section">
+        <h2>My Research Question</h2>
+        
+        <p>
+          How did Patrice Lumumba and Thomas Sankara
+          use political language to promote African
+          independence, unity, and resistance to
+          foreign influence?
+        </p>
+      </section>
+      
+      <section class="corpus-section">
+        <h2>About My Project</h2>
+        
+        <p>
+          For my corpus analysis, I chose to compare
+          two political speeches by Patrice Lumumba
+          and Thomas Sankara. I chose these leaders
+          because they both supported African
+          independence and opposed foreign influence.
+          I used AntConc and Voyant Tools to compare
+          the words and phrases in their speeches.
+        </p>
+      </section>
+      
+      <section class="corpus-section">
+        <h2>Texts and Sources</h2>
+        
+        <h3>Patrice Lumumba (1960)</h3>
+        
+        <p>
+          Lumumba gave his speech on June 30, 1960,
+          when Congo gained independence from Belgium.
+          He talked about freedom, national unity,
+          and Congo's future.
+        </p>
+        
+        <p>
+          Source:
+          <a href="https://lumumbacenter.org/listen">
+            Patrice Lumumba Center
+          </a>
+        </p>
+        
+        <h3>Thomas Sankara (1984)</h3>
+        
+        <p>
+          Sankara gave his speech at the United Nations
+          on October 4, 1984. He spoke about imperialism,
+          inequality, and African independence.
+        </p>
+        
+        <p>
+          Source:
+          <a href="https://www.marxists.org/archive/sankara/1984/october/04.htm">
+            Thomas Sankara's UN Speech
+          </a>
+        </p>
+      </section>
+      
+      <section class="corpus-section">
+        <h2>My Text Files</h2>
+        
+        <p>
+          I saved both speeches as text files
+          on GitHub so others can access them
+          and use them for research.
+        </p>
+        
+        <p>
+          <a href="https://github.com/timotebaraka87-lgtm/Timothy/tree/main/politicalSpeeches">
+            View My Political Speech Text Files
+          </a>
+        </p>
+      </section>
+      
+      <section class="corpus-section">
+        <h2>Voyant Tools Analysis</h2>
+        
+        <p>
+          I used Voyant Tools to find frequently
+          used words and understand the main
+          topics in both speeches.
+        </p>
+        
+        <h3>Patrice Lumumba</h3>
+        
+        <div class="image-gallery">
+          <figure>
+            <img src="images/lumumba-voyant.png"
+              alt="Lumumba Voyant analysis">
+            <figcaption>
+              Lumumba Voyant Tools Results
+            </figcaption>
+          </figure>
+        </div>
+        
+        <p>
+          Words like "independence," "Congo,"
+          and "struggle" show how Lumumba focused
+          on freedom and building a united Congo.
+        </p>
+        
+        <h3>Thomas Sankara</h3>
+        
+        <div class="image-gallery">
+          <figure>
+            <img src="images/sankara-voyant.png"
+              alt="Sankara Voyant analysis">
+            <figcaption>
+              Sankara Voyant Tools Results
+            </figcaption>
+          </figure>
+        </div>
+        
+        <p>
+          Sankara's speech focused more on imperialism,
+          inequality, and the problems African countries
+          continued to face after independence.
+        </p>
+      </section>
+      
+      <section class="corpus-section">
+        <h2>AntConc Analysis</h2>
+        
+        <p>
+          I used AntConc to find repeated phrases
+          in both speeches. I compared 2-grams
+          and 3-grams to understand how each
+          leader used political language.
+        </p>
+        
+        <h3>Patrice Lumumba</h3>
+        
+        <div class="image-gallery">
+          <figure>
+            <img src="images/lumumba-antconc-2gram.png"
+              alt="Lumumba AntConc 2-gram results">
+            <figcaption>
+              Lumumba 2-gram Results
+            </figcaption>
+          </figure>
+          
+          <figure>
+            <img src="images/lumumba-antconc-3gram.png"
+              alt="Lumumba AntConc 3-gram results">
+            <figcaption>
+              Lumumba 3-gram Results
+            </figcaption>
+          </figure>
+        </div>
+        
+        <p>
+          Lumumba repeated phrases like "we shall"
+          and "of the Congo." These phrases show
+          his focus on Congo's independence
+          and the country's future.
+        </p>
+        
+        <h3>Thomas Sankara</h3>
+        
+        <div class="image-gallery">
+          <figure>
+            <img src="images/sankara-antconc-2gram.png"
+              alt="Sankara AntConc 2-gram results">
+            <figcaption>
+              Sankara 2-gram Results
+            </figcaption>
+          </figure>
+          
+          <figure>
+            <img src="images/sankara-antconc-3gram.png"
+              alt="Sankara AntConc 3-gram results">
+            <figcaption>
+              Sankara 3-gram Results
+            </figcaption>
+          </figure>
+        </div>
+        
+        <p>
+          Sankara used phrases like "on behalf of"
+          and "the Third World." This shows how
+          he spoke about other countries facing
+          foreign influence and inequality,
+          not just his own country.
+        </p>
+      </section>
+      
+      <section class="corpus-section">
+        <h2>Comparison</h2>
+        
+        <p>
+          After comparing both speeches, I found
+          that Lumumba focused more on Congo's
+          independence, while Sankara focused on
+          problems African countries still faced
+          after independence. Both leaders wanted
+          freedom, unity, and less foreign influence.
+        </p>
+      </section>
+      
+      <section class="corpus-section">
+        <h2>Conclusion</h2>
+        
+        <p>
+          Overall, this project helped me understand
+          how political leaders use language to
+          express their ideas. Using AntConc and
+          Voyant Tools helped me compare their
+          speeches and understand how both leaders
+          supported African independence.
+        </p>
+      </section>
+      
+    </main>
+    
+  </body>
 </html>
